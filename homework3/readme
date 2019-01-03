@@ -11,7 +11,6 @@
 3.密度型聚类方法（例如DBSCAN与Mean-shift）往往时间效率比较低，并且在NMI与AMI两个评测指标上差距较大（AMI上表现分值更低）。
 
 
-
 使用说明：
 Data_Preprocessing.py-->预处理数据集得到document的tf-idf表示
 Clustering_Method.py-->读取数据并通过sklearn调用各自聚类方法
