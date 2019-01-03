@@ -6,17 +6,14 @@
  
 摘要：
 通过sklearn在Tweets数据集上应用多种聚类方法，我主要发现了以下结论：
-1.	Ward hierarchical clustering、Birch与Gaussian mixture models三个模型非常适合用于文本内容的聚类，并且三个模型时间效率较高；
-2.	Spectral clustering模型在时间效率上表现地最好；
-3.	密度型聚类方法（例如DBSCAN与Mean-shift）往往时间效率比较低，并且在NMI与AMI两个评测指标上差距较大（AMI上表现分值更低）。
+1.Ward hierarchical clustering、Birch与Gaussian mixture models三个模型非常适合用于文本内容的聚类，并且三个模型时间效率较高；
+2.Spectral clustering模型在时间效率上表现地最好；
+3.密度型聚类方法（例如DBSCAN与Mean-shift）往往时间效率比较低，并且在NMI与AMI两个评测指标上差距较大（AMI上表现分值更低）。
 
 
 
 使用说明：
-Preprocessed data ——> 存放的是预处理后的数据集
-index_train or test set ——> 存放的是训练集和测试集的索引
-embeding ——> 存放的是训练集和测试集的embeding
-dict.txt ——> 存放的是字典
-VSM.py ——> 向量空间模型的实现
-KNN.py ——> KNN的实现
-Main.py ——> 调用模型
+Data_Preprocessing.py-->预处理数据集得到document的tf-idf表示
+Clustering_Method.py-->读取数据并通过sklearn调用各自聚类方法
+Tweets.json-->原始数据集
+label.json-->数据集中提取的cluster label
